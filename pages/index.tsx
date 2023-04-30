@@ -1,6 +1,8 @@
 import Head from "next/head";
 import NavBar from "../components/navbar";
-import HomePage from "../components/home";
+import AboutMePage from "@/components/about";
+import HomePageDetails from "@/components/homeDetails";
+import LeftBar from "@/components/leftBar";
 
 export default function Home() {
   return (
@@ -18,7 +20,13 @@ export default function Home() {
       <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight 
                       overflow-x-hidden overflow-y-scroll">
         <NavBar />
-        <HomePage />
+        <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
+          <LeftBar />
+          <div className="h-[88vh] w-full mx-auto p-4">
+            <HomePageDetails />
+            <AboutMePage />
+          </div>
+        </div>
       </main>
     </div>
   );

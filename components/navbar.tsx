@@ -40,21 +40,19 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                <span className="text-textYellow">1. </span>
-                About
+                About Me
               </motion.li>
             </Link>
             <Link
               href="#experience"
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
-              <span className="text-textYellow">2. </span>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                Work Experience
+                Work Experiences
               </motion.li>
             </Link>
             <Link
@@ -66,8 +64,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                <span className="text-textYellow">3. </span>
-                Projects
+                Projects And Certifications
               </motion.li>
             </Link>
             <Link
@@ -79,7 +76,6 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                <span className="text-textYellow">4. </span>
                 Contact
               </motion.li>
             </Link>
