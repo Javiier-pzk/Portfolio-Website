@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Javier Phon Zhee Kai</title>
-        <link rel="icon" href="/favicon.ico"></link>
+        <title>Javiier-pzk</title>
+        <link rel="icon" href="/assets/images/j-icon.png"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
