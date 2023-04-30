@@ -7,14 +7,16 @@ const Navbar = () => {
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="rounded-full w-14 h-14 overflow-hidden"
-        >
-          <Image src={profilePic} alt="navbarlogo" object-fit="cover" />
-        </motion.div>
+        <Link href="#home">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="rounded-full w-14 h-14 overflow-hidden"
+          >
+            <Image src={profilePic} alt="navbarlogo" object-fit="cover" />
+          </motion.div>
+        </Link>
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
             <Link
@@ -52,7 +54,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                Experience
+                Work Experience
               </motion.li>
             </Link>
             <Link
