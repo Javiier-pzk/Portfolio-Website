@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NavBar from "../components/navbar";
+import HomePage from "../components/home";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight 
                       overflow-x-hidden overflow-y-scroll">
         <NavBar />
+        <HomePage />
       </main>
     </div>
   );

@@ -28,8 +28,8 @@ module.exports = {
         bodyColor: "#323437",
         textYellow: "#e2b714",
         textLight: "#d1d0c5",
-        textDark: "#9992b0",
-        hoverColor: "rgba(100, 255, 218. 0.1)"
+        textDark: "#8892b0",
+        hoverColor: "rgba(255,255,204,0.1)"
       },
       screens: {
         xs: '320px',
