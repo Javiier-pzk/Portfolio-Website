@@ -6,7 +6,7 @@ import {
   SiPython,
   SiJavascript,
   SiCsharp,
-  SiCloudera,
+  SiC,
   SiTypescript,
   SiPostgresql,
   SiExpress,
@@ -82,7 +82,7 @@ const AboutMePage = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-textYellow">
-                    <SiCloudera />
+                    <SiC />
                   </span>
                   C
                 </li>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { TiArrowForward, TiArrowForwardOutline } from "react-icons/ti";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
   jobTitle: string;
@@ -7,6 +8,7 @@ interface Props {
   jobDuration: string;
   jobDescriptions: string[];
   attachmentNames: string[];
+  image: StaticImageData;
 }
 
 const handleJobDescriptions = (jobDescriptions: string[]) =>
@@ -45,38 +47,55 @@ const WorkDetails = ({
   jobDuration,
   jobDescriptions,
   attachmentNames,
+  image,
 }: Props) => {
   return (
-    <div
-      className="w-full"
-    >
-      <motion.h3 
-       initial={{ opacity: 0 }}
-       animate={{ opacity: 1 }}
-       transition={{ delay: 0.2 }}
-       className="flex gap-1 font-medium text-xl font-titleFont"
-       >
-        {jobTitle}
-        <span className="text-textYellow tracking-wide"> @ {company}</span>
-      </motion.h3>
-      <motion.p 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-        className="text-md mt-1 font-medium text-textDark">{jobDuration}</motion.p>
-      <motion.ul 
+    <div className="w-full">
+      <div className="flex gap-3 items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="overflow-hidden w-14 h-14"
+        >
+          <Image src={image} alt="company logo" object-fit />
+        </motion.div>
+        <div>
+          <motion.h3
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.25 }}
+            className="flex flex-col lgl:flex-row gap-1 font-medium text-xl font-titleFont"
+          >
+            {jobTitle}
+            <span className="text-textYellow tracking-wide"> @ {company}</span>
+          </motion.h3>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-md mt-1 font-medium text-textDark"
+          >
+            {jobDuration}
+          </motion.p>
+        </div>
+      </div>
+
+      <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="mt-6 flex flex-col gap-3">
+        className="mt-6 flex flex-col gap-3"
+      >
         {handleJobDescriptions(jobDescriptions)}
       </motion.ul>
       {attachmentNames.length > 0 ? (
-        <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="mt-6 flex flex-col">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="mt-6 flex flex-col"
+        >
           <p className="text-md font-medium text-textDark">Attachments:</p>
           <div className="flex gap-2 mt-2">
             {handleAttachments(attachmentNames)}

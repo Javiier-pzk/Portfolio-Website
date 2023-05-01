@@ -1,6 +1,10 @@
 import { useState } from "react";
 import SectionTitle from "./sectionTitle";
 import WorkDetails from "./workDetails";
+import coinhakoLogo from "../public/assets/images/coinhako-logo.png"
+import nusLogo from "../public/assets/images/nus-logo.png"
+import successItLogo from "../public/assets/images/success-it-logo.png"
+import powerhouseAiLogo from "../public/assets/images/powerhouse-ai-logo.png"
 
 const ExperiencePage = () => {
   
@@ -50,7 +54,7 @@ const ExperiencePage = () => {
                 `${isCoinhako
                     ? "border-l-textYellow text-textYellow"
                     : "border-l-gray-500 text-gray-500"
-                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-8 font-medium`
+                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-4 font-medium`
             }
             onClick={handleCoinhako}
           >
@@ -61,7 +65,7 @@ const ExperiencePage = () => {
                 `${isNus
                     ? "border-l-textYellow text-textYellow"
                     : "border-l-gray-500 text-gray-500"
-                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-8 font-medium`
+                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-4 font-medium`
             }
             onClick={handleNus}
           >
@@ -72,7 +76,7 @@ const ExperiencePage = () => {
                 `${isSuccessIt
                     ? "border-l-textYellow text-textYellow"
                     : "border-l-gray-500 text-gray-500"
-                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-8 font-medium`
+                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-4 font-medium`
             }
             onClick={handleSuccessIt}
           >
@@ -83,7 +87,7 @@ const ExperiencePage = () => {
                 `${isPowerhouseAi
                     ? "border-l-textYellow text-textYellow"
                     : "border-l-gray-500 text-gray-500"
-                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-8 font-medium`
+                } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-4 font-medium`
             }
             onClick={handlePowerhouseAi}
           >
@@ -97,11 +101,12 @@ const ExperiencePage = () => {
                 jobDuration="May 2023 - Present" 
                 jobDescriptions={["Trading group"]}
                 attachmentNames={[]}
+                image={coinhakoLogo}
             />
         }
         {isNus && 
             <WorkDetails 
-                jobTitle="Teaching Assistant at NUS (Software Engineering – CS2103/T)" 
+                jobTitle="Teaching Assistant (Software Engineering)" 
                 company="NUS" 
                 jobDuration="Jan 2022 - Present" 
                 jobDescriptions={["Teaching Assistant for a software engineering course, CS2103/T, at NUS during the following academic periods:",
@@ -112,6 +117,7 @@ const ExperiencePage = () => {
                                   "Provided feedback and clarified any doubts students may have with topics taught in the course."
                                  ]}
                 attachmentNames={["AY2122S2-Tutor-Report.pdf"]}
+                image={nusLogo}
             />
         }
         {isSuccessIt && 
@@ -125,6 +131,7 @@ const ExperiencePage = () => {
                                   "Redesigned, refactored and developed the company’s Authentication API and other backend services, to make them more secure, versatile and flexible in supporting more of the company’s products.",
                                  ]}
                 attachmentNames={[]}
+                image={successItLogo}
             />
           }
           {isPowerhouseAi && 
@@ -141,6 +148,7 @@ const ExperiencePage = () => {
                                   "Maintained code quality, organisation, and automatization of the application."
                                  ]}
                 attachmentNames={[]}
+                image={powerhouseAiLogo}
             />
           }
       </div>
