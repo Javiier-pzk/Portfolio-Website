@@ -3,6 +3,7 @@ import NavBar from "../components/navbar";
 import AboutMePage from "@/components/about";
 import HomePageDetails from "@/components/homeDetails";
 import LeftBar from "@/components/leftBar";
+import ExperiencePage from "@/components/experience";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <div className="h-[88vh] w-full mx-auto p-4">
             <HomePageDetails />
             <AboutMePage />
+            <ExperiencePage />
           </div>
         </div>
       </main>
