@@ -47,31 +47,45 @@ const WorkDetails = ({
   attachmentNames,
 }: Props) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.1 }}
+    <div
       className="w-full"
     >
-      <h3 className="flex gap-1 font-medium text-xl font-titleFont">
+      <motion.h3 
+       initial={{ opacity: 0 }}
+       animate={{ opacity: 1 }}
+       transition={{ delay: 0.2 }}
+       className="flex gap-1 font-medium text-xl font-titleFont"
+       >
         {jobTitle}
         <span className="text-textYellow tracking-wide"> @ {company}</span>
-      </h3>
-      <p className="text-md mt-1 font-medium text-textDark">{jobDuration}</p>
-      <ul className="mt-6 flex flex-col gap-3">
+      </motion.h3>
+      <motion.p 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="text-md mt-1 font-medium text-textDark">{jobDuration}</motion.p>
+      <motion.ul 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="mt-6 flex flex-col gap-3">
         {handleJobDescriptions(jobDescriptions)}
-      </ul>
+      </motion.ul>
       {attachmentNames.length > 0 ? (
-        <div className="mt-6 flex flex-col">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="mt-6 flex flex-col">
           <p className="text-md font-medium text-textDark">Attachments:</p>
           <div className="flex gap-2 mt-2">
             {handleAttachments(attachmentNames)}
           </div>
-        </div>
+        </motion.div>
       ) : (
         <div></div>
       )}
-    </motion.div>
+    </div>
   );
 };
 
