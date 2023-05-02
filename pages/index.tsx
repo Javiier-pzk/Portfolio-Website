@@ -6,6 +6,8 @@ import LeftBar from "@/components/leftBar";
 import ExperiencePage from "@/components/experience/experience";
 import ProjectsPage from "@/components/projects/projects";
 import CertificationsPage from "@/components/certifications/certifications";
+import ContactPage from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
         />
       </Head>
       <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight 
-                      overflow-x-hidden overflow-y-scroll">
+                      overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
         <NavBar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <LeftBar />
@@ -31,6 +33,8 @@ export default function Home() {
             <ExperiencePage />
             <ProjectsPage />
             <CertificationsPage />
+            <ContactPage />
+            <Footer />
           </div>
         </div>
       </main>
