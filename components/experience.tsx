@@ -102,6 +102,7 @@ const ExperiencePage = () => {
                 jobDescriptions={["Trading group"]}
                 attachmentNames={[]}
                 image={coinhakoLogo}
+                companyUrl="https://www.coinhako.com"
             />
         }
         {isNus && 
@@ -118,6 +119,7 @@ const ExperiencePage = () => {
                                  ]}
                 attachmentNames={["AY2122S2-Tutor-Report.pdf"]}
                 image={nusLogo}
+                companyUrl="https://nus.edu.sg"
             />
         }
         {isSuccessIt && 
@@ -132,6 +134,7 @@ const ExperiencePage = () => {
                                  ]}
                 attachmentNames={[]}
                 image={successItLogo}
+                companyUrl="https://www.successit.com.sg"
             />
           }
           {isPowerhouseAi && 
@@ -149,6 +152,7 @@ const ExperiencePage = () => {
                                  ]}
                 attachmentNames={[]}
                 image={powerhouseAiLogo}
+                companyUrl="https://www.pwh.ai"
             />
           }
       </div>

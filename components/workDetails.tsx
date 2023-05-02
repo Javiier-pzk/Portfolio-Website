@@ -9,6 +9,7 @@ interface Props {
   jobDescriptions: string[];
   attachmentNames: string[];
   image: StaticImageData;
+  companyUrl: string;
 }
 
 const handleJobDescriptions = (jobDescriptions: string[]) =>
@@ -48,6 +49,7 @@ const WorkDetails = ({
   jobDescriptions,
   attachmentNames,
   image,
+  companyUrl
 }: Props) => {
   return (
     <div className="w-full">
@@ -68,7 +70,15 @@ const WorkDetails = ({
             className="flex flex-col lgl:flex-row gap-1 font-medium text-xl font-titleFont"
           >
             {jobTitle}
-            <span className="text-textYellow tracking-wide"> @ {company}</span>
+            <a href={companyUrl} target="_blank">
+              <span 
+                className="text-textYellow tracking-wide inline-flex relative cursor-pointer overflow-x-hidden group"
+              > 
+                @ {company}
+                <span className="absolute w-full h-[2px] bg-textYellow left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
+              </span>
+              
+            </a>
           </motion.h3>
           <motion.p
             initial={{ opacity: 0 }}
