@@ -7,7 +7,7 @@ const ProjectsPage = () => {
             id="projects"
             className="max-w-containerSmall mx-auto py-10 lgl:py-24 xs:px-10 xl:px-4"
         >
-            <SectionTitle title="Noteworthy Projects"/>
+            <SectionTitle title="Projects"/>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
                 <ProjectCard 
                     projectTitle="Productivity Police" 

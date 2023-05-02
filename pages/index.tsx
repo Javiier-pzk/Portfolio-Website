@@ -5,6 +5,7 @@ import HomePageDetails from "@/components/homeDetails";
 import LeftBar from "@/components/leftBar";
 import ExperiencePage from "@/components/experience/experience";
 import ProjectsPage from "@/components/projects/projects";
+import CertificationsPage from "@/components/certifications/certifications";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
             <AboutMePage />
             <ExperiencePage />
             <ProjectsPage />
+            <CertificationsPage />
           </div>
         </div>
       </main>
