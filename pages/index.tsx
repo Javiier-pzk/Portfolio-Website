@@ -3,8 +3,8 @@ import NavBar from "../components/navbar";
 import AboutMePage from "@/components/about";
 import HomePageDetails from "@/components/homeDetails";
 import LeftBar from "@/components/leftBar";
-import ExperiencePage from "@/components/experience";
-import ProjectsPage from "@/components/projects";
+import ExperiencePage from "@/components/experience/experience";
+import ProjectsPage from "@/components/projects/projects";
 
 export default function Home() {
   return (

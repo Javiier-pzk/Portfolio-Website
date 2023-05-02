@@ -1,5 +1,5 @@
 import ProjectCard from "./projectCard"
-import SectionTitle from "./sectionTitle"
+import SectionTitle from "../sectionTitle"
 
 const ProjectsPage = () => {
     return (

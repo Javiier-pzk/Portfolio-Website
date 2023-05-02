@@ -1,10 +1,10 @@
 import { useState } from "react";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "../sectionTitle";
 import WorkDetails from "./workDetails";
-import coinhakoLogo from "../public/assets/images/coinhako-logo.png"
-import nusLogo from "../public/assets/images/nus-logo.png"
-import successItLogo from "../public/assets/images/success-it-logo.png"
-import powerhouseAiLogo from "../public/assets/images/powerhouse-ai-logo.png"
+import coinhakoLogo from "../../public/assets/images/coinhako-logo.png"
+import nusLogo from "../../public/assets/images/nus-logo.png"
+import successItLogo from "../../public/assets/images/success-it-logo.png"
+import powerhouseAiLogo from "../../public/assets/images/powerhouse-ai-logo.png"
 
 const ExperiencePage = () => {
   
