@@ -13,7 +13,7 @@ const LeftBar = () => {
     >
       <div className="w-full h-full flex flex-col items-center justify-end gap-4 text-textLight">
         <div className="flex flex-col gap-4">
-          <a href="https://github.com/Javiier-pzk" target="_blank">
+          <a href={process.env.NEXT_PUBLIC_GITHUB_URL} target="_blank">
             <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
               <TbBrandGithub />
             </span>
@@ -21,7 +21,7 @@ const LeftBar = () => {
         </div>
         <div className="flex flex-col gap-4">
           <a
-            href="https://www.linkedin.com/in/javiier-pzk/"
+            href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
             target="_blank"
           >
             <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -30,14 +30,14 @@ const LeftBar = () => {
           </a>
         </div>
         <div className="flex flex-col gap-4">
-          <a href="mailto:javierphon@gmail.com" target="_blank">
+          <a href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}`} target="_blank">
             <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
               <SiGmail />
             </span>
           </a>
         </div>
         <div className="flex flex-col gap-4">
-          <a href="mailto:javier.pzk@u.nus.edu" target="_blank">
+          <a href={`mailto:${process.env.NEXT_PUBLIC_NUS_EMAIL}`} target="_blank">
             <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
               <SiMicrosoftoutlook />
             </span>

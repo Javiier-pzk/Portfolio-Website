@@ -9,6 +9,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { SiGmail, SiMicrosoftoutlook } from "react-icons/si";
 
 const Navbar = () => {
+
   const ref = useRef<string | any>();
   const [isShowMenu, setIsShowMenu] = useState(false);
 
@@ -256,7 +257,7 @@ const Navbar = () => {
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{delay: 0.8, ease: "easeIn"}}
-                    href="https://github.com/Javiier-pzk" 
+                    href={process.env.NEXT_PUBLIC_GITHUB_URL} 
                     target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
                       <TbBrandGithub />
@@ -266,7 +267,7 @@ const Navbar = () => {
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{delay: 0.85, ease: "easeIn"}}
-                    href="https://www.linkedin.com/in/javiier-pzk/"
+                    href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -277,7 +278,7 @@ const Navbar = () => {
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{delay: 0.9, ease: "easeIn"}}
-                    href="mailto:javierphon@gmail.com" 
+                    href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}`} 
                     target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
                       <SiGmail />
@@ -287,7 +288,7 @@ const Navbar = () => {
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{delay: 0.95, ease: "easeIn"}}
-                    href="mailto:javier.pzk@u.nus.edu" 
+                    href={`mailto:${process.env.NEXT_PUBLIC_NUS_EMAIL}`} 
                     target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
                       <SiMicrosoftoutlook />

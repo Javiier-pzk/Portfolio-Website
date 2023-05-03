@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 
 const HomePageDetails = () => {
+
+  const LINKEDIN_URL = process.env.LINKEDIN_URL;
+  const GITHUB_URL = process.env.GITHUB_URL;
+
   return (
     <section
       id="home"
@@ -39,7 +43,7 @@ const HomePageDetails = () => {
         disciplined, and hardworking individual who is easy to work with, 
         always willing to learn, and always open to meeting new people!<br></br>
         <a
-          href="https://www.linkedin.com/in/javiier-pzk/"
+          href={LINKEDIN_URL}
           target="_blank"
         >
           <span className="text-textYellow inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
@@ -48,7 +52,7 @@ const HomePageDetails = () => {
           </span>
         </a>
       </motion.p>
-      <a href="https://github.com/Javiier-pzk" target="_blank">
+      <a href={GITHUB_URL} target="_blank">
       <motion.button
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

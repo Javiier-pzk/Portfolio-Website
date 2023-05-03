@@ -17,7 +17,7 @@ const ContactPage = () => {
           or just want to say hi, drop me an email and 
           I will get back to you as soon as possible!
         </p>
-        <a href="mailto:javierphon@gmail.com">
+        <a href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}`}>
         <button className="w-40 h-14 border border-textYellow mt-6 font-titleFont text-textYellow tracking-wider rounded-md hover:bg-hoverColor duration-300">
           Say Hi!
         </button>
