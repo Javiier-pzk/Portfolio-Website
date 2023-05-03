@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <section
       id="contact"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col"
+      className="max-w-containerSmall mx-auto py-32 xs:px-10 xl:px-4"
     >
       <SectionTitle title="Contact"/>
       <div className="mt-6 flex flex-col gap-4 items-center justify-center">
