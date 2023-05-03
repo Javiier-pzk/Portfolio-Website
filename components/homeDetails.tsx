@@ -39,7 +39,7 @@ const HomePageDetails = () => {
         disciplined, and hardworking individual who is easy to work with, 
         always willing to learn, and always open to meeting new people!<br></br>
         <a
-          href="https://www.linkedin.com/in/javier-phon-zhee-kai/"
+          href="https://www.linkedin.com/in/javiier-pzk/"
           target="_blank"
         >
           <span className="text-textYellow inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
