@@ -5,7 +5,7 @@ const ProjectsPage = () => {
     return (
         <section 
             id="projects"
-            className="max-w-containerSmall mx-auto py-10 lgl:py-24 xs:px-10 xl:px-4"
+            className="max-w-containerSmall mx-auto py-10 lgl:py-32 xs:px-10 xl:px-4"
         >
             <SectionTitle title="Projects"/>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
