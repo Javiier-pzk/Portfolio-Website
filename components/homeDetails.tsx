@@ -4,7 +4,7 @@ const HomePageDetails = () => {
   return (
     <section
       id="home"
-      className="max-w-cotentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 xs:px-10 xl:px-4"
+      className="max-w-containerSmall mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 xs:px-10 xl:px-4"
     >
       <motion.h3
         initial={{ y: 10, opacity: 0 }}
@@ -29,7 +29,7 @@ const HomePageDetails = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-base md:max-w-[650px] text-textLight font-medium"
+        className="text-base md:max-w-[700px] text-textLight font-medium"
       >
         As a penultimate year Computer Science undergraduate at the National
         University of Singapore with a specialisation in Software Engineering and a minor in Management, 

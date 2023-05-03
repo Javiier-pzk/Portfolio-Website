@@ -13,8 +13,8 @@ interface Props {
 }
 
 const handleJobDescriptions = (jobDescriptions: string[]) =>
-  jobDescriptions.map((jobDescription) => (
-    <li>
+  jobDescriptions.map((jobDescription, index) => (
+    <li key={index}>
       {jobDescription.charAt(0) === "-" ? (
         <div className="text-base flex gap-2 text-textLight pl-8">
           <span className="text-textYellow mt-1">
@@ -34,8 +34,8 @@ const handleJobDescriptions = (jobDescriptions: string[]) =>
   ));
 
 const handleAttachments = (attachmentNames: string[]) =>
-  attachmentNames.map((attachmentName) => (
-    <a href={`/assets/${attachmentName}`} target="_blank">
+  attachmentNames.map((attachmentName , index) => (
+    <a key={index} href={`/assets/${attachmentName}`} target="_blank">
       <button className="px-4 py-2 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300">
         {attachmentName}
       </button>
@@ -60,7 +60,7 @@ const WorkDetails = ({
           transition={{ delay: 0.2 }}
           className="overflow-hidden w-14 h-14"
         >
-          <Image src={image} alt="company logo" object-fit />
+          <Image src={image} alt="company logo" object-fit="cover" />
         </motion.div>
         <div>
           <motion.h3

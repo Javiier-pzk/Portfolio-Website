@@ -25,7 +25,7 @@ const CertificationCard = ({
           {certTitle}
         </h2>
         <div className="w-full h-100 overflow-hidden">
-          <Image src={certImage} alt="cert image" object-fit />
+          <Image src={certImage} alt="cert image" object-fit="cover" />
         </div>
         <div className="px-7 pb-7 text-sm text-textDark">
           <p>{certIssuer}</p>

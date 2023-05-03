@@ -25,8 +25,8 @@ const ProjectCard = ({projectTitle, projectDescription, projectUrl, projectTechS
           </p>
         </div>
         <ul className="flex text-xs mdl:text-sm text-textDark items-center gap-2 justify-between flex-wrap">
-         {projectTechStack.map((item) => (
-            <li>{item}</li>
+         {projectTechStack.map((item, index) => (
+            <li key={index}>{item}</li>
          ))}
         </ul>
       </div>
