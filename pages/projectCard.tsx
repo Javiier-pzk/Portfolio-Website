@@ -12,11 +12,12 @@ interface Props {
 
 const ProjectCard = ({projectTitle, projectDescription, projectUrl, projectTechStack, loadingDelay}: Props) => {
   return (
-    <a href={projectUrl} target="_blank">
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: loadingDelay }}
+    <motion.a 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: loadingDelay }}
+      href={projectUrl} target="_blank">
+      <div 
         className="w-full h-80 rounded-lg bg-hoverColor p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
         <div className="flex justify-between items-center">
           <FaRegFolder className="text-4xl text-textYellow" />
@@ -35,8 +36,8 @@ const ProjectCard = ({projectTitle, projectDescription, projectUrl, projectTechS
             <li key={index}>{item}</li>
          ))}
         </ul>
-      </motion.div>
-    </a>
+      </div>
+    </motion.a>
   );
 };
 
