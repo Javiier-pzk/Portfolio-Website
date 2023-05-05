@@ -14,14 +14,14 @@ const Projects = () => {
         <ProjectCard
           projectTitle="Productivity Police"
           projectDescription="A mobile productivity app built for iOS devices that consists of some of the more important productivity features that any student might require."
-          projectUrl={`${process.env.NEXT_PUBLIC_GITHUB_URL}/Productivity-Police`}
+          projectUrlPath="Productivity-Police"
           projectTechStack={["React Native (Expo)", "Firebase"]}
           loadingDelay={0.1}
         />
         <ProjectCard
           projectTitle="dfmn_bot"
           projectDescription="A telegram bot that helps you make decisions or provides recommendations for you."
-          projectUrl={`${process.env.NEXT_PUBLIC_GITHUB_URL}/dfmn_bot`}
+          projectUrlPath="dfmn_bot"
           projectTechStack={[
             "pyTelegramBotAPI",
             "Heroku",
@@ -33,21 +33,21 @@ const Projects = () => {
         <ProjectCard
           projectTitle="Truffle"
           projectDescription="A Lightweight SQL management library for C#."
-          projectUrl={`${process.env.NEXT_PUBLIC_GITHUB_URL}/Truffle`}
+          projectUrlPath="Truffle"
           projectTechStack={["C#"]}
           loadingDelay={0.2}
         />
         <ProjectCard
           projectTitle="Restaurant HR Helper"
           projectDescription="A desktop app built as part of a school project for restaurant managers to manage their employees, suppliers and customers. It optimized for use via a Command Line Interface."
-          projectUrl={`${process.env.NEXT_PUBLIC_GITHUB_URL}/tp`}
+          projectUrlPath="tp"
           projectTechStack={["Java", "JavaFX", "Gradle"]}
           loadingDelay={0.25}
         />
         <ProjectCard
           projectTitle="Duke"
           projectDescription="An interactive chat bot desktop app bulit as part of a school project that helps you keep track of your todos, deadlines and events."
-          projectUrl={`${process.env.NEXT_PUBLIC_GITHUB_URL}/ip`}
+          projectUrlPath="ip"
           projectTechStack={["Java", "JavaFX", "Gradle"]}
           loadingDelay={0.3}
         />
