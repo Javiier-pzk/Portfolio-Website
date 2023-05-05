@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="max-w-containerSmall h-full flex items-center justify-center mx-auto py-10 xs:px-10 xl:px-4">
       <Head>
-        <title>Javiier-pzk | Home</title>
+        <title>Javiier-pzk | Contact</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>
       </Head>
       <main className="flex flex-col gap-4 items-center justify-center">
