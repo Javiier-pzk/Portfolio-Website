@@ -51,10 +51,7 @@ const Experience = () => {
       <main className="flex flex-col">
         <SectionTitle title="Work Experiences" />
         <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
-          <motion.ul 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
+          <ul
             className="md:w-50 flex flex-col">
             <li
               className={`${
@@ -96,7 +93,7 @@ const Experience = () => {
             >
               Powerhouse AI
             </li>
-          </motion.ul>
+          </ul>
           {isCoinhako && (
             <WorkDetails
               jobTitle="Software Engineer Intern, Trading"
