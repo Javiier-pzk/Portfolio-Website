@@ -5,18 +5,20 @@ import { motion } from "framer-motion";
 interface Props {
     projectTitle: string;
     projectDescription: string;
-    projectUrl: string;
+    projectUrlPath: string;
     projectTechStack: string[];
     loadingDelay: number;
 }
 
-const ProjectCard = ({projectTitle, projectDescription, projectUrl, projectTechStack, loadingDelay}: Props) => {
+const ProjectCard = ({projectTitle, projectDescription, projectUrlPath, projectTechStack, loadingDelay}: Props) => {
+  console.log(projectTitle, projectDescription, projectUrlPath, projectTechStack, loadingDelay)
   return (
     <motion.a 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: loadingDelay }}
-      href={projectUrl} target="_blank">
+      href={`${process.env.NEXT_PUBLIC_GITHUB_URL}/${projectUrlPath}`} 
+      target="_blank">
       <div 
         className="w-full h-80 rounded-lg bg-hoverColor p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
         <div className="flex justify-between items-center">
