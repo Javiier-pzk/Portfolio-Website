@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Footer from "./footer";
 
 const ContactPage = () => {
   return (
-    <div className="max-w-containerSmall h-full flex items-center mx-auto py-10 xs:px-10 xl:px-4">
+    <div className="max-w-containerSmall h-full flex items-center justify-center mx-auto py-10 xs:px-10 xl:px-4">
       <Head>
         <title>Javiier-pzk | Home</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>
@@ -44,6 +45,7 @@ const ContactPage = () => {
             Say Hi!
           </motion.button>
         </a>
+        <Footer />
       </main>
     </div>
   );
