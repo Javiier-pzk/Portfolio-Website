@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import SectionTitle from "./sectionTitle";
-import WorkDetails from "./workDetails";
-import coinhakoLogo from "../public/assets/images/coinhako-logo.png";
-import nusLogo from "../public/assets/images/nus-logo.png";
-import successItLogo from "../public/assets/images/success-it-logo.png";
-import powerhouseAiLogo from "../public/assets/images/powerhouse-ai-logo.png";
+import SectionTitle from "@/components/sectionTitle";
+import WorkDetails from "@/components/workDetails";
+import coinhakoLogo from "@/public/assets/images/coinhako-logo.png";
+import nusLogo from "@/public/assets/images/nus-logo.png";
+import successItLogo from "@/public/assets/images/success-it-logo.png";
+import powerhouseAiLogo from "@/public/assets/images/powerhouse-ai-logo.png";
 
 const Experience = () => {
   const [isCoinhako, setIsCoinhako] = useState(true);
@@ -51,9 +51,11 @@ const Experience = () => {
       <main className="flex flex-col">
         <SectionTitle title="Work Experiences" />
         <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
-          <ul
-            className="md:w-50 flex flex-col">
-            <li
+          <ul className="md:w-50 flex flex-col">
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.1 }}
               className={`${
                 isCoinhako
                   ? "border-l-textYellow text-textYellow"
@@ -62,8 +64,11 @@ const Experience = () => {
               onClick={handleCoinhako}
             >
               Coinhako
-            </li>
-            <li
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.15 }}
               className={`${
                 isNus
                   ? "border-l-textYellow text-textYellow"
@@ -72,8 +77,11 @@ const Experience = () => {
               onClick={handleNus}
             >
               National University of Singapore
-            </li>
-            <li
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
               className={`${
                 isSuccessIt
                   ? "border-l-textYellow text-textYellow"
@@ -82,8 +90,11 @@ const Experience = () => {
               onClick={handleSuccessIt}
             >
               Success IT Consultancy & Services
-            </li>
-            <li
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.25 }}
               className={`${
                 isPowerhouseAi
                   ? "border-l-textYellow text-textYellow"
@@ -92,7 +103,7 @@ const Experience = () => {
               onClick={handlePowerhouseAi}
             >
               Powerhouse AI
-            </li>
+            </motion.li>
           </ul>
           {isCoinhako && (
             <WorkDetails

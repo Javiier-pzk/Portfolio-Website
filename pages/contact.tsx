@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Footer from "./footer";
+import Footer from "@/components/footer";
 
 const Contact = () => {
   return (

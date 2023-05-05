@@ -1,5 +1,5 @@
 import Head from "next/head";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "../components/sectionTitle";
 import {
   SiExpo,
   SiAngular,

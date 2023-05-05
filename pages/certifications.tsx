@@ -1,12 +1,12 @@
-import SectionTitle from "./sectionTitle";
-import CertificationCard from "./certificationCard";
-import hackwagonCert from "../public/assets/images/hackwagon-cert.png";
-import orbitalCert from "../public/assets/images/orbital-cert.png";
+import SectionTitle from "@/components/sectionTitle";
+import CertificationCard from "@/components/certificationCard";
+import hackwagonCert from "@/public/assets/images/hackwagon-cert.png";
+import orbitalCert from "@/public/assets/images/orbital-cert.png";
 import Head from "next/head";
 
 const Certifications = () => {
   return (
-    <div className="max-w-containerSmall h-full flex items-center mx-auto py-10 xs:px-10 xl:px-4">
+    <div className="max-w-containerSmall h-full py-20 mx-auto xs:px-10 xl:px-4">
       <Head>
         <title>Javiier-pzk | Certifications</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>

@@ -1,5 +1,5 @@
-import Navbar from "@/pages/navbar"
-import LeftBar from "@/pages/leftBar"
+import Navbar from "@/components/navbar"
+import LeftBar from "@/components/leftBar"
 import "@/styles/globals.css"
 import type { AppProps } from "next/app"
 import Router from 'next/router'
