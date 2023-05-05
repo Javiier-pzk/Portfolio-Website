@@ -13,10 +13,7 @@ interface Props {
 const ProjectCard = ({projectTitle, projectDescription, projectUrlPath, projectTechStack, loadingDelay}: Props) => {
   console.log(projectTitle, projectDescription, projectUrlPath, projectTechStack, loadingDelay)
   return (
-    <motion.a 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: loadingDelay }}
+    <a 
       href={`${process.env.NEXT_PUBLIC_GITHUB_URL}/${projectUrlPath}`} 
       target="_blank">
       <div 
@@ -39,7 +36,7 @@ const ProjectCard = ({projectTitle, projectDescription, projectUrlPath, projectT
          ))}
         </ul>
       </div>
-    </motion.a>
+    </a>
   );
 };
 
