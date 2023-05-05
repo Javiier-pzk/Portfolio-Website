@@ -2,7 +2,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Footer from "./footer";
 
-const ContactPage = () => {
+const Contact = () => {
   return (
     <div className="max-w-containerSmall h-full flex items-center justify-center mx-auto py-10 xs:px-10 xl:px-4">
       <Head>
@@ -51,4 +51,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;
