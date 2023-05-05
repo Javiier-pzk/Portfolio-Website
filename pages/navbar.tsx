@@ -12,20 +12,7 @@ const Navbar = () => {
 
   const ref = useRef<string | any>();
   const [isShowMenu, setIsShowMenu] = useState(false);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    setIsShowMenu(false)
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({ behavior: "smooth" });
-    //update class name of clicked links
-    const links = document.querySelectorAll(".nav-link");
-    links.forEach((link) => link.classList.remove("active"));
-    e.currentTarget.classList.add("active");
-  };
-
+  
   const handleMenuClick = (e: any) => {
     if (e.target.contains(ref.current)) {
       setIsShowMenu(false)
@@ -35,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
-        <Link href="#home" onClick={handleScroll}>
+        <Link href="/">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -48,8 +35,7 @@ const Navbar = () => {
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
             <Link
-              href="#home"
-              onClick={handleScroll}
+              href="/"
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -61,8 +47,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="#about"
-              onClick={handleScroll}
+              href="/about"
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -74,8 +59,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="#experience"
-              onClick={handleScroll}
+              href="/experience"
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -87,8 +71,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="#projects"
-              onClick={handleScroll}
+              href="/projects"
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -100,8 +83,8 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="#certifications"
-              onClick={handleScroll}
+              href="/certifications"
+              //onClick={handleScroll}
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -113,8 +96,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="#contact"
-              onClick={handleScroll}
+              href="/contact"
               className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -164,8 +146,8 @@ const Navbar = () => {
               <div className="flex flex-col text-base gap-7">
                 <ul className="flex flex-col text-base gap-7">
                   <Link
-                    href="#home"
-                    onClick={handleScroll}
+                    href="/"
+                    onClick={() => setIsShowMenu(false)}
                     className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
                   >
                     <motion.li
@@ -177,8 +159,21 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                   <Link
-                    href="#about"
-                    onClick={handleScroll}
+                    href="/about"
+                    onClick={() => setIsShowMenu(false)}
+                    className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
+                  >
+                    <motion.li
+                      initial={{ x: 20, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.2, delay: 0.15, ease: "easeIn" }}
+                    >
+                      About Me
+                    </motion.li>
+                  </Link>
+                  <Link
+                    href="/experience"
+                    onClick={() => setIsShowMenu(false)}
                     className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
                   >
                     <motion.li
@@ -186,12 +181,25 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
                     >
-                      About Me
+                      Work Experiences
                     </motion.li>
                   </Link>
                   <Link
-                    href="#experience"
-                    onClick={handleScroll}
+                    href="/projects"
+                    onClick={() => setIsShowMenu(false)}
+                    className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
+                  >
+                    <motion.li
+                      initial={{ x: 20, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.2, delay: 0.25, ease: "easeIn" }}
+                    >
+                      Projects
+                    </motion.li>
+                  </Link>
+                  <Link
+                    href="/certifications"
+                    onClick={() => setIsShowMenu(false)}
                     className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
                   >
                     <motion.li
@@ -199,44 +207,18 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.3, ease: "easeIn" }}
                     >
-                      Work Experiences
-                    </motion.li>
-                  </Link>
-                  <Link
-                    href="#projects"
-                    onClick={handleScroll}
-                    className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
-                  >
-                    <motion.li
-                      initial={{ x: 20, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
-                    >
-                      Projects
-                    </motion.li>
-                  </Link>
-                  <Link
-                    href="#certifications"
-                    onClick={handleScroll}
-                    className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
-                  >
-                    <motion.li
-                      initial={{ x: 20, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
-                    >
                       Certifications
                     </motion.li>
                   </Link>
                   <Link
-                    href="#contact"
-                    onClick={handleScroll}
+                    href="/contact"
+                    onClick={() => setIsShowMenu(false)}
                     className="flex items-center gap-1 font-medium text-textLight hover:text-textYellow cursor-pointer duration-300 nav-link"
                   >
                     <motion.li
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.6, ease: "easeIn" }}
+                      transition={{ duration: 0.2, delay: 0.35, ease: "easeIn" }}
                     >
                       Contact
                     </motion.li>
@@ -246,7 +228,7 @@ const Navbar = () => {
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.7 }}
+                    transition={{ delay: 0.4 }}
                     className="px-4 py-2 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300"
                   >
                     Resume
@@ -256,7 +238,7 @@ const Navbar = () => {
                   <motion.a 
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{delay: 0.8, ease: "easeIn"}}
+                    transition={{delay: 0.45, ease: "easeIn"}}
                     href={process.env.NEXT_PUBLIC_GITHUB_URL} 
                     target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -266,7 +248,7 @@ const Navbar = () => {
                   <motion.a
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{delay: 0.85, ease: "easeIn"}}
+                    transition={{delay: 0.5, ease: "easeIn"}}
                     href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
                     target="_blank"
                   >
@@ -277,7 +259,7 @@ const Navbar = () => {
                   <motion.a 
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{delay: 0.9, ease: "easeIn"}}
+                    transition={{delay: 0.55, ease: "easeIn"}}
                     href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}`} 
                     target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -287,7 +269,7 @@ const Navbar = () => {
                   <motion.a 
                     initial={{y: 20, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
-                    transition={{delay: 0.95, ease: "easeIn"}}
+                    transition={{delay: 0.6, ease: "easeIn"}}
                     href={`mailto:${process.env.NEXT_PUBLIC_NUS_EMAIL}`} 
                     target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">

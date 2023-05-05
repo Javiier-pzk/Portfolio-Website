@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import { TbFileCertificate } from "react-icons/tb";
-import { RxOpenInNewWindow } from "react-icons/rx";
+import { motion } from "framer-motion"
 
 interface Props {
   certTitle: string;
@@ -8,6 +7,7 @@ interface Props {
   certIssuer: string;
   certIssueDate: string;
   certImage: StaticImageData;
+  loadingDelay: number
 }
 
 const CertificationCard = ({
@@ -16,10 +16,15 @@ const CertificationCard = ({
   certIssuer,
   certIssueDate,
   certImage,
+  loadingDelay
 }: Props) => {
   return (
     <a href={certUrl} target="_blank">
-      <div className="w-full h-80 rounded-lg bg-hoverColor flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: loadingDelay }}
+        className="w-full h-80 rounded-lg bg-hoverColor flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
       
         <h2 className="px-7 pt-7 text-xl font-titleFont font-semibold tracking-wide group-hover:text-textYellow">
           {certTitle}
@@ -31,7 +36,7 @@ const CertificationCard = ({
           <p>{certIssuer}</p>
           <p>Issued {certIssueDate}</p>
         </div>
-      </div>
+      </motion.div>
     </a>
   );
 };
