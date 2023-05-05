@@ -2,7 +2,9 @@
 This is a git repository for my personal portfolio website.
 
 The website is now live and you can visit it at [https://javiier-pzk.vercel.app/](https://javiier-pzk.vercel.app/)
-![ezgif com-resize](https://user-images.githubusercontent.com/85099754/235838183-c4aa7240-762e-4ffa-a54d-586085e479a5.gif)
+![ezgif com-resize](https://user-images.githubusercontent.com/85099754/236535272-c2b31db9-6fe7-4fbe-846e-777720b528c6.gif)
+
+
 
 
 ## Built with
