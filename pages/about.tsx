@@ -31,7 +31,7 @@ const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className=" max-w-containerSmall max-h-screen flex items-center mx-auto xs:px-10 xl:px-4">
+    <div className=" max-w-containerSmall h-full py-20 mx-auto xs:px-10 xl:px-4">
       <Head>
         <title>Javiier-pzk | About Me</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>
@@ -260,9 +260,9 @@ const About = () => {
             </motion.button>
           </div>
           <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
+            initial={{ x: 30,  opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="w-full lgl:w-1/3 h-80 relative group">
             <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
               <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">

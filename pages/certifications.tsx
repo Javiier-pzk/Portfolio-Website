@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const Certifications = () => {
   return (
-    <div className="max-w-containerSmall h-full mx-auto py-20 xs:px-10 xl:px-4">
+    <div className="max-w-containerSmall h-full flex items-center mx-auto py-10 xs:px-10 xl:px-4">
       <Head>
         <title>Javiier-pzk | Certifications</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>

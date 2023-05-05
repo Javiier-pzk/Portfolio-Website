@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="max-w-containerSmall h-full flex items-center mx-auto xs:px-10 xl:px-4">
+    <div className="max-w-containerSmall h-full flex items-center py-10 mx-auto xs:px-10 xl:px-4">
       <Head>
         <title>Javiier-pzk | Home</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>
