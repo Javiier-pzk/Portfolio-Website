@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const Certifications = () => {
   return (
-    <div className="min-h-[90vh] sml:min-h-[88vh] flex items-center mt-20 sml:mt-0 py-10 mdl:py-20">
+    <div className="min-h-[90vh] sml:min-h-[88vh] flex items-center mt-[10vh] sml:mt-0 py-10 mdl:py-20">
       <Head>
         <title>Javiier-pzk | Certifications</title>
       </Head>
