@@ -16,7 +16,7 @@ Router.events.on('routeChangeComplete', () => {
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="w-full h-screen font-bodyFont bg-bodyColor text-textLight 
+    <div className="w-full min-h-screen lg:h-screen font-bodyFont bg-bodyColor text-textLight 
       overflow-x-hidden overflow-y-auto scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
       <Navbar />
       <div className="xl:flex items-center gap-20 justify-between">
