@@ -49,17 +49,14 @@ const Experience = () => {
       </Head>
       <main className="flex flex-col">
         <SectionTitle title="Work Experiences" />
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.05 }}
-          className="w-full mt-10 flex flex-col md:flex-row gap-16">
-          <ul 
-            className="md:w-50 flex flex-col">
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.1 }}
+        <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
+          <motion.ul
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            className="md:w-50 flex flex-col"
+          >
+            <li
               className={`${
                 isCoinhako
                   ? "border-l-textYellow text-textYellow"
@@ -68,11 +65,8 @@ const Experience = () => {
               onClick={handleCoinhako}
             >
               Coinhako
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.15 }}
+            </li>
+            <li
               className={`${
                 isNus
                   ? "border-l-textYellow text-textYellow"
@@ -81,11 +75,8 @@ const Experience = () => {
               onClick={handleNus}
             >
               National University of Singapore
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
+            </li>
+            <li
               className={`${
                 isSuccessIt
                   ? "border-l-textYellow text-textYellow"
@@ -94,11 +85,8 @@ const Experience = () => {
               onClick={handleSuccessIt}
             >
               Success IT Consultancy & Services
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.25 }}
+            </li>
+            <li
               className={`${
                 isPowerhouseAi
                   ? "border-l-textYellow text-textYellow"
@@ -107,8 +95,8 @@ const Experience = () => {
               onClick={handlePowerhouseAi}
             >
               Powerhouse AI
-            </motion.li>
-          </ul>
+            </li>
+          </motion.ul>
           {isCoinhako && (
             <WorkDetails
               jobTitle="Software Engineer Intern, Trading"
@@ -173,7 +161,7 @@ const Experience = () => {
               companyUrl="https://www.pwh.ai"
             />
           )}
-        </motion.div>
+        </div>
       </main>
     </div>
   );
