@@ -4,7 +4,7 @@ import SectionTitle from "@/components/sectionTitle";
 
 const Projects = () => {
   return (
-    <div className="max-w-containerSmall h-full mx-auto py-20 xs:px-10 xl:px-4">
+    <div className="py-10 mdl:py-20">
       <Head>
         <title>Javiier-pzk | Projects</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>

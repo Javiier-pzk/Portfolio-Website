@@ -17,11 +17,13 @@ Router.events.on('routeChangeComplete', () => {
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div className="w-full h-screen font-bodyFont bg-bodyColor text-textLight 
-      overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
+      overflow-x-hidden overflow-y-auto scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
       <Navbar />
-      <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
+      <div className="xl:flex items-center gap-20 justify-between">
         <LeftBar />
-        <Component {...pageProps} />
+        <div className="max-w-containerSmall mx-auto xs:px-10 xl:px-4">
+          <Component {...pageProps} />
+        </div>
       </div>
     </div>
   )
