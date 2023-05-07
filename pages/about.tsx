@@ -252,7 +252,7 @@ const About = () => {
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.3, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
             >
               <button
                 className="w-36 h-12 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300"
