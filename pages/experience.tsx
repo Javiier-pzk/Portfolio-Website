@@ -53,7 +53,7 @@ const Experience = () => {
           <motion.ul 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.05 }}
             className="md:w-50 flex flex-col">
             <motion.li
               initial={{ opacity: 0 }}
