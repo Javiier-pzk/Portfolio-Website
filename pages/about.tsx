@@ -31,7 +31,7 @@ const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="sml:min-h-[88vh] flex items-center mt-20 sml:mt-0 py-10 mdl:py-20">
+    <div className="min-h-screen sml:min-h-[88vh] flex items-center mt-20 sml:mt-0 py-10 mdl:py-20">
       <Head>
         <title>Javiier-pzk | About Me</title>
       </Head>
