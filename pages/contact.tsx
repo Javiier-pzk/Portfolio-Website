@@ -34,16 +34,17 @@ const Contact = () => {
           Whether you have a question, job opportunity, or just want to say hi,
           drop me an email and I will get back to you as soon as possible!
         </motion.p>
-        <a href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}`}>
-          <motion.button
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+        <motion.a 
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          href={`mailto:${process.env.NEXT_PUBLIC_GMAIL}`}>
+          <button
             className="w-40 h-14 border border-textYellow mt-6 font-titleFont text-textYellow tracking-wider rounded-md hover:bg-hoverColor duration-300"
           >
             Say Hi!
-          </motion.button>
-        </a>
+          </button>
+        </motion.a>
         <Footer />
       </main>
     </div>

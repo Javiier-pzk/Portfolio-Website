@@ -107,16 +107,18 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <a href="/assets/resume.pdf" target="_blank">
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
+          <motion.a 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            href="/assets/resume.pdf" 
+            target="_blank">
+            <button
               className="px-4 py-2 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300"
             >
               Resume
-            </motion.button>
-          </a>
+            </button>
+          </motion.a>
         </div>
         <div
           onClick={() => setIsShowMenu(true)}

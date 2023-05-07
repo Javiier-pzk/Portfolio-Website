@@ -57,11 +57,12 @@ const About = () => {
               >
                 Programming Languages:
               </motion.p>
-              <motion.ul 
+              <motion.ul
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="list-disc pl-8">
+                className="list-disc pl-8"
+              >
                 <li>Proficient:</li>
                 <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6 mb-6">
                   <li className="flex items-center gap-2">
@@ -248,21 +249,25 @@ const About = () => {
                 </motion.ul>
               </div>
             )}
-            <motion.button
+            <motion.div
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.3 }}
-              className="w-36 h-12 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300"
-              onClick={() => setIsExpanded(!isExpanded)}
             >
-              {isExpanded ? "Show less" : "Show More"}
-            </motion.button>
+              <button
+                className="w-36 h-12 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300"
+                onClick={() => setIsExpanded(!isExpanded)}
+              >
+                {isExpanded ? "Show less" : "Show More"}
+              </button>
+            </motion.div>
           </div>
-          <motion.div 
-            initial={{ x: 30,  opacity: 0 }}
+          <motion.div
+            initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="w-full lgl:w-1/3 h-80 relative group">
+            className="w-full lgl:w-1/3 h-80 relative group"
+          >
             <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
               <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
                 <Image

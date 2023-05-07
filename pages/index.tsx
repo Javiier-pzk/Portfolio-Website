@@ -48,16 +48,18 @@ const Home = () => {
             </span>
           </a>
         </motion.p>
-        <a href={process.env.NEXT_PUBLIC_GITHUB_URL} target="_blank">
-          <motion.button
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
+        <motion.a 
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          href={process.env.NEXT_PUBLIC_GITHUB_URL} 
+          target="_blank">
+          <button
             className="w-52 h-14 text-sm font-titleFont border border-textYellow rounded-md text-textYellow tracking-wide hover:bg-hoverColor duration-300"
           >
             View my projects!
-          </motion.button>
-        </a>
+          </button>
+        </motion.a>
       </main>
     </div>
   );
