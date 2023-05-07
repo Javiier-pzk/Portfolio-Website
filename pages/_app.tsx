@@ -17,7 +17,7 @@ Router.events.on('routeChangeComplete', () => {
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="w-full h-screen font-bodyFont bg-bodyColor text-textLight 
+    <div className="w-full h-screen flex flex-col sml:flex-none font-bodyFont bg-bodyColor text-textLight 
       overflow-x-hidden overflow-y-auto scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
         <Head>
           <link rel="icon" href="/assets/images/j-icon.png"></link>
@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Navbar />
       <div className="xl:flex items-center gap-20 justify-between">
         <LeftBar />
-        <div className="max-w-containerSmall mx-auto xs:px-10 xl:px-4">
+        <div className="max-w-containerSmall mx-auto xs:px-10 xl:px-4 flex-grow sml:flex-grow-0">
           <Component {...pageProps} />
         </div>
       </div>
