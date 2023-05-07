@@ -43,7 +43,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="py-10 mdl:py-20">
+    <div className="min-h-[88vh] flex items-center py-10 mdl:py-20">
       <Head>
         <title>Javiier-pzk | Work Experiences</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>
