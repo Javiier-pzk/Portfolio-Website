@@ -21,7 +21,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Navbar />
       <div className="xl:flex items-center gap-20 justify-between">
         <LeftBar />
-        <div className="max-w-containerSmall mx-auto xs:px-10 xl:px-4">
+        <div className="max-w-containerSmall mx-auto xs:px-10 xl:px-4 h-full">
           <Component {...pageProps} />
         </div>
       </div>
