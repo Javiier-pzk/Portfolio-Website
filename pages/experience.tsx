@@ -43,7 +43,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="min-h-[90vh] sml:min-h-[88vh] flex items-center mt-20 sml:mt-0 py-10 mdl:py-20">
+    <div className="min-h-[90vh] sml:min-h-[88vh] flex items-center py-10 mdl:py-20">
       <Head>
         <title>Javiier-pzk | Work Experiences</title>
       </Head>
