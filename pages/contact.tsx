@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 
 const Contact = () => {
   return (
-    <div className="min-h-[90vh] sml:min-h-[88vh] flex items-center justify-center mt-20 sml:mt-0">
+    <div className="min-h-[90vh] sml:min-h-[88vh] flex items-center justify-center py-10 mt-20 sml:mt-0 mdl:py-0">
       <Head>
         <title>Javiier-pzk | Contact</title>
       </Head>
