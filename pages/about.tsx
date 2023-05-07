@@ -31,7 +31,7 @@ const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="min-h-[90vh] sml:min-h-[88vh] py-10 mdl:py-20 flex items-center">
+    <div className="min-h-[80vh] sml:min-h-[88vh] py-10 mdl:py-20 flex items-center">
       <Head>
         <title>Javiier-pzk | About Me</title>
         <link rel="icon" href="/assets/images/j-icon.png"></link>
