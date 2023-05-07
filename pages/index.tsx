@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="min-h-[80vh] sml:min-h-[88vh] flex items-center mt-20 sml:mt-0">
+    <div className="sml:min-h-[88vh] flex flex-grow items-center mt-20 sml:mt-0 py-10 mdl:py-0">
       <Head>
         <title>Javiier-pzk | Home</title>
-        <link rel="icon" href="/assets/images/j-icon.png"></link>
       </Head>
       <main className="flex flex-col gap-4 lgl:gap-8">
         <motion.h3

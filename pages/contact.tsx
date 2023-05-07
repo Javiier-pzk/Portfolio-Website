@@ -4,10 +4,9 @@ import Footer from "@/components/footer";
 
 const Contact = () => {
   return (
-    <div className="min-h-[80vh] sml:min-h-[88vh] flex items-center justify-center mt-20 sml:mt-0">
+    <div className="sml:min-h-[88vh] flex flex-grow items-center justify-center mt-20 sml:mt-0">
       <Head>
         <title>Javiier-pzk | Contact</title>
-        <link rel="icon" href="/assets/images/j-icon.png"></link>
       </Head>
       <main className="flex flex-col gap-4 items-center justify-center">
         <motion.p
