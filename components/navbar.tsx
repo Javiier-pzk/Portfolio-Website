@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full shadow-navbarShadow h-[10%] sml:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
+    <div className="w-full shadow-navbarShadow h-20 sml:h-[12vh] fixed sml:sticky top-0 z-50 bg-bodyColor px-4">
       <div className="w-full h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <Link href="/">
           <motion.div
