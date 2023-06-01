@@ -121,7 +121,7 @@ const Experience = () => {
                 "Graded student's practical exams.",
                 "Provided feedback and clarified any doubts students may have with topics taught in the course.",
               ]}
-              attachmentNames={["AY2122S2-Tutor-Report.pdf"]}
+              attachmentNames={["AY2223S2-Tutor-Report.pdf", "AY2122S2-Tutor-Report.pdf"]}
               image={nusLogo}
               companyUrl="https://nus.edu.sg"
             />
