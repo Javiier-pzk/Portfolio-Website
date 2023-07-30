@@ -102,7 +102,12 @@ const Experience = () => {
               jobTitle="Software Engineer Intern, Trading"
               company="Coinhako"
               jobDuration="May 2023 - Present"
-              jobDescriptions={["Trading group"]}
+              jobDescriptions={[
+                "Optimised the efficiency of the company’s options database application, handled migration of old trade data into AWS timestreams and implemented proper monitoring using the Slack API.",
+                "Containerized trading desk applications using micro-services like Docker.",
+                "Published and developed a python library that allows traders to query and analyse market data from multiple exchanges using the FIX protocol.",
+                "Supported third party trade engine integration by developing REST APIs using Go, Redis and MySQL and deploying it on AWS lambdas"
+              ]}
               attachmentNames={[]}
               image={coinhakoLogo}
               companyUrl="https://www.coinhako.com"
