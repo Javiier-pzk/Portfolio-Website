@@ -103,10 +103,10 @@ const Experience = () => {
               company="Coinhako"
               jobDuration="May 2023 - Present"
               jobDescriptions={[
-                "Optimised the efficiency of the company’s options database application, handled migration of old trade data into AWS timestreams and implemented proper monitoring using the Slack API.",
+                "Optimised the efficiency of the company’s options database application, handled the migration of old trade data into AWS timestreams and implemented proper monitoring using the Slack API.",
                 "Containerized trading desk applications using micro-services like Docker.",
-                "Published and developed a python library that allows traders to query and analyse market data from multiple exchanges using the FIX protocol.",
-                "Supported third party trade engine integration by developing REST APIs using Go, Redis and MySQL and deploying it on AWS lambdas"
+                "Published and developed a Python library that allows traders to query and analyse market data from multiple exchanges using the FIX protocol.",
+                "Supported third-party trade engine integration by developing REST APIs using Go, Redis and MySQL and deploying it on AWS Lambdas"
               ]}
               attachmentNames={[]}
               image={coinhakoLogo}
@@ -120,7 +120,7 @@ const Experience = () => {
               jobDuration="Jan 2022 - May 2023"
               jobDescriptions={[
                 "Teaching Assistant for a software engineering course, CS2103/T, at NUS during the following academic periods:",
-                "-AY22/23 Sem 2 (Jan 2023 – Present)",
+                "-AY22/23 Sem 2 (Jan 2023 – May 2023)",
                 "-AY21/22 Sem 2 (Jan 2022 – May 2022)",
                 "Tutored students on software engineering principles, concepts, and practices.",
                 "Graded student's practical exams.",
