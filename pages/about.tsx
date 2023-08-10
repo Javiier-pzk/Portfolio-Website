@@ -1,6 +1,8 @@
 import Head from "next/head";
 import SectionTitle from "../components/sectionTitle";
 import {
+  SiAwslambda,
+  SiAmazonaws,
   SiExpo,
   SiAngular,
   SiReact,
@@ -8,8 +10,8 @@ import {
   SiJavascript,
   SiCsharp,
   SiC,
+  SiDocker,
   SiTypescript,
-  SiPostgresql,
   SiExpress,
   SiFlask,
   SiFirebase,
@@ -20,8 +22,7 @@ import {
   SiMicrosoftazure,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
-import { TbBrandGoogleBigQuery } from "react-icons/tb";
-import { GrMysql } from "react-icons/gr";
+import { TbBrandGoogleBigQuery, TbBrandGolang, TbSql } from "react-icons/tb";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import profilePic from "../public/assets/images/profile-pic.jpeg";
@@ -83,6 +84,12 @@ const About = () => {
                     </span>
                     C#
                   </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-textYellow">
+                      <TbBrandGolang />
+                    </span>
+                    Go
+                  </li>
                 </ul>
                 <li> Intermediate:</li>
                 <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6 mb-6">
@@ -106,15 +113,9 @@ const About = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="text-textYellow">
-                      <GrMysql />
+                      <TbSql />
                     </span>
-                    MySQL
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="text-textYellow">
-                      <SiPostgresql />
-                    </span>
-                    PostgreSQL
+                    SQL
                   </li>
                 </ul>
               </motion.ul>
@@ -135,6 +136,21 @@ const About = () => {
                   transition={{ delay: 0.2 }}
                   className="list-disc pl-8"
                 >
+                  <li>Amazon Web Services:</li>
+                  <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6 mb-6">
+                    <li className="flex items-center gap-2">
+                      <span className="text-textYellow">
+                        <SiAmazonaws />
+                      </span>
+                      AWS Timestreams
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-textYellow">
+                        <SiAwslambda />
+                      </span>
+                      AWS Lambdas
+                    </li>
+                  </ul>
                   <li>Microsoft Azure:</li>
                   <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6 mb-6">
                     <li className="flex items-center gap-2">
@@ -202,7 +218,7 @@ const About = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
                 >
-                  Frameworks:
+                  Frameworks/Libraries/Tools:
                 </motion.p>
                 <motion.ul
                   initial={{ opacity: 0 }}
@@ -229,6 +245,12 @@ const About = () => {
                         <SiReact />
                       </span>
                       React (Next.js)
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-textYellow">
+                        <SiDocker />
+                      </span>
+                      Docker
                     </li>
                   </ul>
                   <li>Intermediate:</li>
