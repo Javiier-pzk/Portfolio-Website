@@ -117,9 +117,10 @@ const Experience = () => {
             <WorkDetails
               jobTitle="Teaching Assistant (Software Engineering)"
               company="NUS"
-              jobDuration="Jan 2022 - May 2023"
+              jobDuration="Jan 2022 - Present"
               jobDescriptions={[
                 "Teaching Assistant for a software engineering course, CS2103/T, at NUS during the following academic periods:",
+                "-AY23/24 Sem 1 (Aug 2023 - Dec 2023)",
                 "-AY22/23 Sem 2 (Jan 2023 – May 2023)",
                 "-AY21/22 Sem 2 (Jan 2022 – May 2022)",
                 "Tutored students on software engineering principles, concepts, and practices.",
