@@ -99,9 +99,17 @@ const Experience = () => {
           </motion.ul>
           {isCoinhako && (
             <WorkDetails
-              jobTitle="Software Engineer Intern, Trading"
-              company="Coinhako"
-              jobDuration="May 2023 - Present"
+              jobDetails={[
+                { 
+                  jobTitle: "Software Engineer",
+                  startDate: "2024-01", 
+                },
+                { 
+                  jobTitle: "Software Engineer Intern",
+                  startDate: "2023-05", 
+                  endDate: "2023-12",
+                }
+              ]}
               jobDescriptions={[
                 "Optimised the efficiency of the company’s options database application, handled the migration of old trade data into AWS timestreams and implemented proper monitoring using the Slack API.",
                 "Containerized trading desk applications using micro-services like Docker.",
@@ -115,9 +123,13 @@ const Experience = () => {
           )}
           {isNus && (
             <WorkDetails
-              jobTitle="Teaching Assistant (Software Engineering)"
-              company="NUS"
-              jobDuration="Jan 2022 - Present"
+              jobDetails={[
+                { 
+                  jobTitle: "Teaching Assistant (Software Engineering)",
+                  startDate: "2022-01", 
+                  endDate: "2023-12",
+                }
+              ]}
               jobDescriptions={[
                 "Teaching Assistant for a software engineering course, CS2103/T, at NUS during the following academic periods:",
                 "-AY23/24 Sem 1 (Aug 2023 - Dec 2023)",
@@ -134,9 +146,13 @@ const Experience = () => {
           )}
           {isSuccessIt && (
             <WorkDetails
-              jobTitle="Software Engineer Intern"
-              company="Success IT Consultancy & Services"
-              jobDuration="May - Aug 2022"
+            jobDetails={[
+                { 
+                  jobTitle: "Software Engineer Intern",
+                  startDate: "2022-05", 
+                  endDate: "2022-07",
+                }
+              ]}
               jobDescriptions={[
                 "Built, deployed and maintained both the frontend and backend of the company’s new SAAS product.",
                 "Spearheaded the backend development and overall design for the master control app of the company’s new SAAS product.",
@@ -150,9 +166,13 @@ const Experience = () => {
           )}
           {isPowerhouseAi && (
             <WorkDetails
-              jobTitle="Software Engineer Intern"
-              company="Powerhouse AI"
-              jobDuration="Dec 2021 - May 2022"
+            jobDetails={[
+                { 
+                  jobTitle: "Software Engineer Intern",
+                  startDate: "2021-12", 
+                  endDate: "2022-05",
+                }
+              ]}
               jobDescriptions={[
                 "Designed, developed, and maintained several new features as well as the UI of the application",
                 "Integrated the application's frontend and backend together with RESTful APIs.",
