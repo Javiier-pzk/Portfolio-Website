@@ -101,8 +101,13 @@ const Experience = () => {
             <WorkDetails
               jobDetails={[
                 { 
-                  jobTitle: "Software Engineer",
+                  jobTitle: "Software Engineer II",
+                  startDate: "2024-07", 
+                },
+                { 
+                  jobTitle: "Software Engineer I",
                   startDate: "2024-01", 
+                  endDate: "2024-06"
                 },
                 { 
                   jobTitle: "Software Engineer Intern",
@@ -111,10 +116,13 @@ const Experience = () => {
                 }
               ]}
               jobDescriptions={[
-                "Optimised the efficiency of the company’s options database application, handled the migration of old trade data into AWS timestreams and implemented proper monitoring using the Slack API.",
-                "Containerized trading desk applications using micro-services like Docker.",
-                "Published and developed a Python library that allows traders to query and analyse market data from multiple exchanges using the FIX protocol.",
-                "Supported third-party trade engine integration by developing REST APIs using Go, Redis and MySQL and deploying it on AWS Lambdas"
+                "Led the development of a comprehensive risk management system: Heavily involved in system design, development, testing, deployment, and integration of various major crypto exchanges into the risk management system, ensuring robust risk controls for the trading team.",
+                "Enhanced monitoring and visibility: Integrated telemetry services such as Datadog and Sentry, enabling real-time metrics collection and error tracking, with automated Slack notifications for trading desk services.",
+                "Boosted test coverage: Increased test coverage of trading-desk services by up to 50%, significantly improving reliability and reducing potential downtime.",
+                "Developed both public and internal APIs: Built and thoroughly tested APIs for public data retrieval and internal trading use, ensuring seamless access to critical market information and trading functionalities.",
+                "Published essential trading libraries: Created and maintained libraries, including a FIX protocol decoder, that are heavily utilized by the trading team for efficient data processing and automation.",
+                "Automated trading processes: Streamlined and automated key trading operations, improving efficiency and reducing manual workloads for the trading team.",
+                "Managed cloud infrastructure: Maintained and optimized AWS cloud infrastructure for trading desk services and trader tools using Terraform, ensuring high availability and scalability.",
               ]}
               attachmentNames={[]}
               image={coinhakoLogo}
