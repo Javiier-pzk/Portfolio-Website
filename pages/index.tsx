@@ -24,7 +24,7 @@ const Home = () => {
         >
           Javier Phon Zhee Kai.
           <span className="text-textDark mt-2 lgl:mt-4 text-2xl lgl:text-4xl">
-            I am a student, developer and aspiring Software Engineer.
+            Software Engineer
           </span>
         </motion.h1>
         <motion.p
@@ -33,7 +33,7 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-base md:max-w-[700px] text-textLight font-medium"
         >
-          As a penultimate year Computer Science undergraduate at the National
+          As recent Computer Science fresh graduate from the National
           University of Singapore with a specialisation in Software Engineering
           and a minor in Management, I am very passionate about all things tech
           and is very eager to acquire real-world experience in the tech/fintech
