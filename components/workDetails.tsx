@@ -13,30 +13,35 @@ interface Props {
 const handleJobDetails = (jobDetails: any[]) =>
   jobDetails.map((jobDetail, index) => (
     <li key={index}>
-      <div className={`flex ${jobDetails.length == 1 ? "flex-col" : "flex-row"}`}>
+      <div
+        className={`flex ${jobDetails.length == 1 ? "flex-col" : "flex-row"}`}
+      >
         <div className="font-medium text-xl font-titleFont">
           {jobDetail.jobTitle}
         </div>
-        <div className={`flex flex-row gap-2 text-md mt-1 font-medium text-textDark ${jobDetails.length > 1 ? "mx-3" : ""}`}>
+        <div
+          className={`flex flex-row gap-2 text-md mt-1 font-medium text-textDark ${jobDetails.length > 1 ? "mx-3" : ""}`}
+        >
           <div>
-            {formatDate(jobDetail.startDate)} - {jobDetail.endDate ? formatDate(jobDetail.endDate) : "Present"}
+            {formatDate(jobDetail.startDate)} -{" "}
+            {jobDetail.endDate ? formatDate(jobDetail.endDate) : "Present"}
           </div>
+          <div>•</div>
           <div>
-            •
-          </div>
-          <div>
-            {calculateDateDiff(jobDetail.startDate, jobDetail.endDate ? jobDetail.endDate : new Date().toISOString())}
+            {calculateDateDiff(
+              jobDetail.startDate,
+              jobDetail.endDate ? jobDetail.endDate : new Date().toISOString(),
+            )}
           </div>
         </div>
       </div>
     </li>
   ));
 
-
 const formatDate = (date: string) => {
   const d = new Date(date);
-  return d.toLocaleString('default', { month: 'short', year: 'numeric' });
-}
+  return d.toLocaleString("default", { month: "short", year: "numeric" });
+};
 
 const calculateDateDiff = (startDate: string, endDate: string) => {
   const start = new Date(startDate);
@@ -59,7 +64,7 @@ const calculateDateDiff = (startDate: string, endDate: string) => {
     return `${diffInYears} ${yearUnit}`;
   }
   return `${diffInYears} ${yearUnit} ${diffInMonths} ${monthUnit}`;
-}
+};
 
 const handleJobDescriptions = (jobDescriptions: string[]) =>
   jobDescriptions.map((jobDescription, index) => (
@@ -83,7 +88,7 @@ const handleJobDescriptions = (jobDescriptions: string[]) =>
   ));
 
 const handleAttachments = (attachmentNames: string[]) =>
-  attachmentNames.map((attachmentName , index) => (
+  attachmentNames.map((attachmentName, index) => (
     <a key={index} href={`/assets/${attachmentName}`} target="_blank">
       <button className="px-4 py-2 rounded-md text-textYellow text-[13px] border border-textYellow hover:bg-hoverColor duration-300">
         {attachmentName}
@@ -96,7 +101,7 @@ const WorkDetails = ({
   jobDescriptions,
   attachmentNames,
   image,
-  companyUrl
+  companyUrl,
 }: Props) => {
   return (
     <div className="w-full">
@@ -108,7 +113,7 @@ const WorkDetails = ({
           className="overflow-hidden w-14 h-14"
         >
           <a href={companyUrl} target="_blank" rel="noopener noreferrer">
-            <Image src={image} alt="company logo" object-fit="cover" />  
+            <Image src={image} alt="company logo" object-fit="cover" />
           </a>
         </motion.div>
         <motion.ul

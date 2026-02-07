@@ -33,14 +33,14 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-base md:max-w-[700px] text-textLight font-medium"
         >
-          As recent Computer Science fresh graduate from the National
-          University of Singapore with a specialisation in Software Engineering
-          and a minor in Management, I am very passionate about all things tech
-          and is very eager to acquire real-world experience in the tech/fintech
-          industry as a Software Engineer. Furthermore, I pride myself as a
-          highly motivated, disciplined, and hardworking individual who is easy
-          to work with, always willing to learn, and always open to meeting new
-          people!<br></br>
+          As recent Computer Science fresh graduate from the National University
+          of Singapore with a specialisation in Software Engineering and a minor
+          in Management, I am very passionate about all things tech and is very
+          eager to acquire real-world experience in the tech/fintech industry as
+          a Software Engineer. Furthermore, I pride myself as a highly
+          motivated, disciplined, and hardworking individual who is easy to work
+          with, always willing to learn, and always open to meeting new people!
+          <br></br>
           <a href={process.env.NEXT_PUBLIC_LINKEDIN_URL} target="_blank">
             <span className="text-textYellow inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
               Learn More
@@ -48,21 +48,20 @@ const Home = () => {
             </span>
           </a>
         </motion.p>
-        <motion.a 
+        <motion.a
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          href={process.env.NEXT_PUBLIC_GITHUB_URL} 
-          target="_blank">
-          <button
-            className="w-52 h-14 text-sm font-titleFont border border-textYellow rounded-md text-textYellow tracking-wide hover:bg-hoverColor duration-300"
-          >
+          href={process.env.NEXT_PUBLIC_GITHUB_URL}
+          target="_blank"
+        >
+          <button className="w-52 h-14 text-sm font-titleFont border border-textYellow rounded-md text-textYellow tracking-wide hover:bg-hoverColor duration-300">
             View my projects!
           </button>
         </motion.a>
       </main>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

@@ -20,10 +20,7 @@ const LeftBar = () => {
           </a>
         </div>
         <div className="flex flex-col gap-4">
-          <a
-            href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
-            target="_blank"
-          >
+          <a href={process.env.NEXT_PUBLIC_LINKEDIN_URL} target="_blank">
             <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
               <SlSocialLinkedin />
             </span>
@@ -37,7 +34,10 @@ const LeftBar = () => {
           </a>
         </div>
         <div className="flex flex-col gap-4">
-          <a href={`mailto:${process.env.NEXT_PUBLIC_NUS_EMAIL}`} target="_blank">
+          <a
+            href={`mailto:${process.env.NEXT_PUBLIC_NUS_EMAIL}`}
+            target="_blank"
+          >
             <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textYellow cursor-pointer hover:-translate-y-2 transition-all duration-300">
               <SiMicrosoftoutlook />
             </span>

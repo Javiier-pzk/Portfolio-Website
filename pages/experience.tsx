@@ -124,9 +124,9 @@ const Experience = () => {
           {isWorldQuant && (
             <WorkDetails
               jobDetails={[
-                { 
+                {
                   jobTitle: "Quantitative Developer, Macro",
-                  startDate: "2025-06", 
+                  startDate: "2025-06",
                 },
               ]}
               jobDescriptions={[
@@ -144,21 +144,21 @@ const Experience = () => {
           {isCoinhako && (
             <WorkDetails
               jobDetails={[
-                { 
+                {
                   jobTitle: "Software Engineer II",
                   startDate: "2024-07",
-                  endDate: "2025-06"
+                  endDate: "2025-06",
                 },
-                { 
+                {
                   jobTitle: "Software Engineer I",
-                  startDate: "2024-01", 
-                  endDate: "2024-06"
+                  startDate: "2024-01",
+                  endDate: "2024-06",
                 },
-                { 
+                {
                   jobTitle: "Software Engineer Intern",
-                  startDate: "2023-05", 
+                  startDate: "2023-05",
                   endDate: "2023-12",
-                }
+                },
               ]}
               jobDescriptions={[
                 "Led the development of a comprehensive risk management system: Heavily involved in system design, development, testing, deployment, and integration of various major crypto exchanges into the risk management system, ensuring robust risk controls for the trading team.",
@@ -177,11 +177,11 @@ const Experience = () => {
           {isNus && (
             <WorkDetails
               jobDetails={[
-                { 
+                {
                   jobTitle: "Teaching Assistant (Software Engineering)",
-                  startDate: "2022-01", 
+                  startDate: "2022-01",
                   endDate: "2023-12",
-                }
+                },
               ]}
               jobDescriptions={[
                 "Teaching Assistant for a software engineering course, CS2103/T, at NUS during the following academic periods:",
@@ -192,19 +192,23 @@ const Experience = () => {
                 "Graded student's practical exams.",
                 "Provided feedback and clarified any doubts students may have with topics taught in the course.",
               ]}
-              attachmentNames={["AY2324S1-Tutor-Report.pdf", "AY2223S2-Tutor-Report.pdf", "AY2122S2-Tutor-Report.pdf"]}
+              attachmentNames={[
+                "AY2324S1-Tutor-Report.pdf",
+                "AY2223S2-Tutor-Report.pdf",
+                "AY2122S2-Tutor-Report.pdf",
+              ]}
               image={nusLogo}
               companyUrl="https://nus.edu.sg"
             />
           )}
           {isSuccessIt && (
             <WorkDetails
-            jobDetails={[
-                { 
+              jobDetails={[
+                {
                   jobTitle: "Software Engineer Intern",
-                  startDate: "2022-05", 
+                  startDate: "2022-05",
                   endDate: "2022-07",
-                }
+                },
               ]}
               jobDescriptions={[
                 "Built, deployed and maintained both the frontend and backend of the company’s new SAAS product.",
@@ -219,12 +223,12 @@ const Experience = () => {
           )}
           {isPowerhouseAi && (
             <WorkDetails
-            jobDetails={[
-                { 
+              jobDetails={[
+                {
                   jobTitle: "Software Engineer Intern",
-                  startDate: "2021-12", 
+                  startDate: "2021-12",
                   endDate: "2022-05",
-                }
+                },
               ]}
               jobDescriptions={[
                 "Designed, developed, and maintained several new features as well as the UI of the application",
