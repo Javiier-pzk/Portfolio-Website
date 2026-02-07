@@ -107,7 +107,7 @@ const WorkDetails = ({
           transition={{ delay: 0.2 }}
           className="overflow-hidden w-14 h-14"
         >
-          <a href={companyUrl}>
+          <a href={companyUrl} target="_blank" rel="noopener noreferrer">
             <Image src={image} alt="company logo" object-fit="cover" />  
           </a>
         </motion.div>
@@ -129,7 +129,7 @@ const WorkDetails = ({
       >
         {handleJobDescriptions(jobDescriptions)}
       </motion.ul>
-      {attachmentNames.length > 0 ? (
+      {attachmentNames.length > 0 && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -141,8 +141,6 @@ const WorkDetails = ({
             {handleAttachments(attachmentNames)}
           </div>
         </motion.div>
-      ) : (
-        <div></div>
       )}
     </div>
   );

@@ -7,14 +7,25 @@ import coinhakoLogo from "@/public/assets/images/coinhako-logo.png";
 import nusLogo from "@/public/assets/images/nus-logo.png";
 import successItLogo from "@/public/assets/images/success-it-logo.png";
 import powerhouseAiLogo from "@/public/assets/images/powerhouse-ai-logo.png";
+import worldQuantLogo from "@/public/assets/images/worldquant-logo.png";
 
 const Experience = () => {
-  const [isCoinhako, setIsCoinhako] = useState(true);
+  const [isWorldQuant, setIsWorldQuant] = useState(true);
+  const [isCoinhako, setIsCoinhako] = useState(false);
   const [isNus, setIsNus] = useState(false);
   const [isSuccessIt, setIsSuccessIt] = useState(false);
   const [isPowerhouseAi, setIsPowerhouseAi] = useState(false);
 
+  const handleWorldQuant = () => {
+    setIsWorldQuant(true);
+    setIsCoinhako(false);
+    setIsNus(false);
+    setIsSuccessIt(false);
+    setIsPowerhouseAi(false);
+  };
+
   const handleCoinhako = () => {
+    setIsWorldQuant(false);
     setIsCoinhako(true);
     setIsNus(false);
     setIsSuccessIt(false);
@@ -22,6 +33,7 @@ const Experience = () => {
   };
 
   const handleNus = () => {
+    setIsWorldQuant(false);
     setIsCoinhako(false);
     setIsNus(true);
     setIsSuccessIt(false);
@@ -29,6 +41,7 @@ const Experience = () => {
   };
 
   const handleSuccessIt = () => {
+    setIsWorldQuant(false);
     setIsCoinhako(false);
     setIsNus(false);
     setIsSuccessIt(true);
@@ -36,6 +49,7 @@ const Experience = () => {
   };
 
   const handlePowerhouseAi = () => {
+    setIsWorldQuant(false);
     setIsCoinhako(false);
     setIsNus(false);
     setIsSuccessIt(false);
@@ -56,6 +70,16 @@ const Experience = () => {
             transition={{ delay: 0.1 }}
             className="md:w-50 flex flex-col"
           >
+            <li
+              className={`${
+                isWorldQuant
+                  ? "border-l-textYellow text-textYellow"
+                  : "border-l-gray-500 text-gray-500"
+              } border-l-2 bg-transparent hover:bg-hoverColor py-3 text-sm cursor-pointer duration-300 px-4 font-medium`}
+              onClick={handleWorldQuant}
+            >
+              WorldQuant
+            </li>
             <li
               className={`${
                 isCoinhako
@@ -97,12 +121,33 @@ const Experience = () => {
               Powerhouse AI
             </li>
           </motion.ul>
+          {isWorldQuant && (
+            <WorkDetails
+              jobDetails={[
+                { 
+                  jobTitle: "Quantitative Developer, Macro",
+                  startDate: "2025-06", 
+                },
+              ]}
+              jobDescriptions={[
+                "Built and maintained trading/research tooling for Quant Macro portfolio managers and researchers, including APIs, analytics libraries, data pipelines, monitoring scripts, and visualization utilities to accelerate alpha development and support live trading operations.",
+                "Took ownership of Alpha Analyzer within one month of joining and led end-to-end development as the primary project owner and developer; delivered a production-grade visualization and comparison platform used by Quant Macro portfolio managers and researchers, supporting single-alpha analysis, multi-alpha benchmarking, and instrument-level breakdowns.",
+                "Improved intraday tick data access performance by 10x by designing and implementing a caching layer with a background daemon to stream live time-series updates into internal cache storage, significantly reducing repeated database reads.",
+                "Developed a consolidated global macro event calendar service by integrating multiple internal and external datasets into a centralized platform, enabling researchers to enhance alpha signals and improve volatility forecasting, volume modeling, and portfolio construction.",
+                "Collaborated closely with portfolio managers and researchers to translate trading/research requirements into scalable production-ready systems, supporting both alpha research and live trading operations.",
+              ]}
+              attachmentNames={[]}
+              image={worldQuantLogo}
+              companyUrl="https://www.worldquant.com"
+            />
+          )}
           {isCoinhako && (
             <WorkDetails
               jobDetails={[
                 { 
                   jobTitle: "Software Engineer II",
-                  startDate: "2024-07", 
+                  startDate: "2024-07",
+                  endDate: "2025-06"
                 },
                 { 
                   jobTitle: "Software Engineer I",
